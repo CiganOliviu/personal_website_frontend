@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#facebook {
+  color: #FFFFFF;
+  margin-top: auto;
+  padding: 10%;
+  font-size: 18px;
+  transition: all 500ms ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#facebook:hover {
+  color: #4267B2;
+  transition: all 500ms ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#instagram {
+  color: #FFFFFF;
+  margin-top: 5%;
+  padding: 10%;
+  font-size: 18px;
+  transition: all 500ms ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#instagram:hover {
+  color: #F56040;
+  transition: all 500ms ease;
 }
 
-.App-link {
-  color: #61dafb;
+#youtube {
+  color: #FFFFFF;
+  margin-top: auto;
+  padding: 10%;
+  font-size: 18px;
+  transition: all 500ms ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#youtube:hover {
+  color: #FF0000;
+  transition: all 500ms ease;
 }

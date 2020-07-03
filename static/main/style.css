@@ -21,18 +21,30 @@ body {
   color: #000000;
   font-size: 30px;
   font-family: 'Lobster', cursive;
+  transition: all 500ms ease-out;
+}
+
+.header p:hover {
+    text-decoration: none;
+    color: #ff6666;
+    transition: all 500ms ease-out;
+}
+
+.header a {
+
+    text-decoration: none;
 }
 
 .header i {
   font-size: 20px;
   color: #000000;
-  transition: all 500ms ease;
+  transition: all 500ms ease-out;
   margin: 1%;
 }
 
 .header i:hover {
   color: #ff6666;
-  transition: all 500ms ease;
+  transition: all 500ms ease-out;
 }
 
 .photo img {
@@ -67,23 +79,64 @@ body {
   font-size: 25px;
 }
 
+.grettings i {
+    font-size: 50px;
+    color: #ffffff;
+    animation: sdb05 1.5s infinite;
+    margin-bottom: 2%;
+}
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+#wrapper {
+    margin: 5%;
+}
+
 .progress{
 	width: 200px;
 	height: 280px;
 }
-.progress .track, .progress .fill{
+
+.progress .track, .progress .fill {
 	fill: rgba(0, 0, 0, 0);
 	stroke-width: 3;
 	transform: rotate(90deg)translate(0px, -80px);
 }
-.progress .track{
+
+.progress .track {
 	stroke: rgb(56, 71, 83);
 }
+
 .progress .fill {
 	stroke: rgb(255, 255, 255);
 	stroke-dasharray: 219.99078369140625;
 	stroke-dashoffset: -219.99078369140625;
-	transition: stroke-dashoffset 1s;
+	transition: stroke-dashoffset 2.5s;
 }
 .progress.blue .fill {
 	stroke: rgb(51, 153, 255);
@@ -119,6 +172,10 @@ body {
     cursor: default;
 }
 
+.counter-box {
+   margin: 3%;
+}
+
 .footer {
    height: auto;
 }
@@ -127,7 +184,7 @@ body {
   margin: auto;
   font-size: 25px;
   color: #000000;
-  transition: all 500ms ease;
+  transition: all 500ms ease-out;
   padding: 1%;
   border: #000000 2px solid;
   border-radius: 75%;
@@ -135,7 +192,7 @@ body {
 
 .footer i:hover {
   background: #ff6666;
-  transition: all 500ms ease;
+  transition: all 500ms ease-out;
 }
 
 .border {

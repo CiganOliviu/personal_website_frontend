@@ -28,7 +28,7 @@
     <div class = "header" align = "center">
       <div class = "col-lg-12">
         <div class = "logo">
-            <p>Cigan Oliviu-David</p>
+            <a href = "/"><p>Cigan Oliviu-David</p></a>
             <i class="fa fa-facebook-official" aria-hidden="true" id = "facebook"></i>
             <i class="fa fa-instagram" aria-hidden="true" id = "instagram"></i>
             <i class="fa fa-github" aria-hidden="true" id = "github"></i>
@@ -43,40 +43,41 @@
     </div>
     <div class = "container">
       <div class = "col-lg-12">
-        <div class = "grettings" data-aos = "fade-up">
+        <div class = "grettings" data-aos = "fade-up" align = "center">
           <h1>Welcome World!</h1>
           <h3>Nice to have you here!</h3>
+            <a href="#" class = "scroll-down"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
     <div class = "container" align = "center">
         <div id="wrapper" class="center">
-            <div class = "col-lg-3" data-aos="fade-right">
-                    <svg class="progress blue noselect" data-progress="71" x="0px" y="0px" viewBox="0 0 80 80">
+            <div class = "col-lg-3">
+                    <svg class="progress blue noselect" id = "bar-progress" data-progress="71" x="0px" y="0px" viewBox="0 0 80 80">
                         <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <text class="value" x="50%" y="55%">0%</text>
                         <text class="text" x="50%" y="115%">Web Stack</text>
                     </svg>
             </div>
-            <div class = "col-lg-3" data-aos = "fade-down">
-                    <svg class="progress green noselect" data-progress="84" x="0px" y="0px" viewBox="0 0 80 80">
+            <div class = "col-lg-3">
+                    <svg class="progress green noselect" id = "bar-progress" data-progress="84" x="0px" y="0px" viewBox="0 0 80 80">
                         <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <text class="value" x="50%" y="55%">0%</text>
                         <text class="text" x="50%" y="115%">Testing</text>
                     </svg>
             </div>
-            <div class = "col-lg-3" data-aos = "fade-up">
-                    <svg class="progress red noselect" data-progress="89" x="0px" y="0px" viewBox="0 0 80 80">
+            <div class = "col-lg-3">
+                    <svg class="progress red noselect" id = "bar-progress" data-progress="89" x="0px" y="0px" viewBox="0 0 80 80">
                         <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <text class="value" x="50%" y="55%">0%</text>
                         <text class="text" x="50%" y="115%">Soft Skills</text>
                     </svg>
             </div>
-            <div class = "col-lg-3" data-aos="fade-left">
-                    <svg class="progress yellow noselect" data-progress="78" x="0px" y="0px" viewBox="0 0 80 80">
+            <div class = "col-lg-3">
+                    <svg class="progress yellow noselect" id = "bar-progress" data-progress="78" x="0px" y="0px" viewBox="0 0 80 80">
                         <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
                         <text class="value" x="50%" y="55%">0%</text>
@@ -85,13 +86,22 @@
              </div>
         </div>
     </div>
+    <div>&nbsp;</div>
     <div class = "content-without-background">
         <div class = "container" align = "center">
-            <div class = "col-lg-12">
-                <div class = "content" data-aos="fade-up-right">
-                    <h1> Other Projects </h1>
-                    <p></p>
-                </div>
+            <div class = "counter-box" data-aos="fade-up-right">
+                 <div class='col-lg-4'>
+                  <span class="counter" data-from="0" data-to="54" style="font-size: 250%"> 54 </span>
+                  <h3> clients </h3>
+                 </div>
+                 <div class='col-lg-4'>
+                  <span class="counter" data-from="0" data-to="35" style="font-size: 250%"> 35 </span>
+                  <h3> ideas </h3>
+                 </div>
+                 <div class='col-lg-4'>
+                  <span class="counter" data-from="0" data-to="50" style="font-size: 250%"> 50 </span>
+                  <h3> projects </h3>
+                 </div>
             </div>
         </div>
     </div>
@@ -106,7 +116,7 @@
                     <div>&nbsp;</div>
                     <div class = "border"></div>
                     <div class = "copyright">
-                        <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Cigan Oliviu-David all rights reserved</p>
+                        <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Cigan Oliviu-David all rights reserved.</p>
                     </div>
                 </div>
             </div>
@@ -116,6 +126,8 @@
   {% load static %}
   <script src="{% static 'main/aos_init.js' %}"></script>
   <script src="{% static 'main/progress_bars.js' %}"></script>
+  <script src="{% static 'main/digit_incrementer.js' %}"></script>
+  <script src="{% static 'main/scroll_down.js' %}"></script>
 </html>
     <!--
     <p>

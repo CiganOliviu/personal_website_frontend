@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/mobile_adjust.css' %}">
+
+    <title>Books recommandation - Cigan Oliviu David</title>
+</head>
+    <body>
+        <a id="button-top"></a>
+
+        <div class = "header" align = "center" data-aos="fade-right">
+          <div class = "col-lg-12">
+            <div class = "logo">
+                <a href = "/"><p>Cigan Oliviu-David</p></a>
+                <a href="https://www.facebook.com/cigan.oliviu.31" target = "__blank"><i class="fa fa-facebook-official" aria-hidden="true" id = "facebook"></i></a>
+                <a href="https://www.instagram.com/cigandavid/?hl=ro" target = "__blank"><i class="fa fa-instagram" aria-hidden="true" id = "instagram"></i></a>
+                <a href="https://github.com/CiganOliviu" target = "__blank"><i class="fa fa-github" aria-hidden="true" id = "github"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class = "content-without-background-2">
+            <div class = "container" align = "center">
+                <div>&nbsp;</div>
+                <div class = "col-lg-4" data-aos="flip-left">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/clean_code.jpg' %}" />
+                        <h3>Clean Code</h3>
+                        <h5>Bob Martin</h5>
+                        <a href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?dchild=1&keywords=Clean+code&qid=1593982089&sr=8-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-up">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/clean_arhitecture.jpg' %}" />
+                        <h3>Clean Arhitecture</h3>
+                        <h5>Bob Martin</h5>
+                        <a href="https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=sr_1_1?dchild=1&keywords=clean+architecture&qid=1593982101&sr=8-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-right">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/clean_coder.jpg' %}" />
+                        <h3>Clean Coder</h3>
+                        <h5>Bob Martin</h5>
+                        <a href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073/ref=sr_1_1?dchild=1&keywords=clean+coder&qid=1593982115&sr=8-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <div class = "col-lg-4" data-aos="flip-left">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/refactoring.jpg' %}" />
+                        <h3>Refactoring</h3>
+                        <h5>Martin Fowler</h5>
+                        <a href="https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599/ref=sr_1_1?dchild=1&keywords=refactoring&qid=1593982127&sr=8-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-up">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/implementation_patterns.jpg' %}" />
+                        <h3>Implementation Patterns</h3>
+                        <h5>Kent Beck</h5>
+                        <a href="https://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091/ref=sr_1_1?dchild=1&keywords=implementation+patterns&qid=1593982147&sr=8-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-right">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/life_3.jpeg' %}" />
+                        <h3>Life 3.0</h3>
+                        <h5>Max Tegmark</h5>
+                        <a href="https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101970316/ref=sr_1_1?dchild=1&keywords=life+3.0&qid=1593982161&sr=8-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <div class = "col-lg-4" data-aos="flip-left">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/10x.jpg' %}" />
+                        <h3>10X Rule</h3>
+                        <h5>Grant Cardone</h5>
+                        <a href="https://www.amazon.com/10X-Rule-Difference-Between-2011-11-29/dp/B017V8KLPW/ref=sr_1_2?dchild=1&keywords=10x+rule&qid=1594055578&sr=8-2" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-up">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/bobe.jpg' %}" />
+                        <h3>Be obsessed or be average</h3>
+                        <h5>Grant Cardone</h5>
+                        <a href="https://www.amazon.com/Be-Obsessed-Average-Grant-Cardone/dp/1101981059/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1594055599&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-right">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/millionaire_booklet.jpg' %}" />
+                        <h3>The millionaire booklet</h3>
+                        <h5>Grant Cardone</h5>
+                        <a href="https://www.amazon.com/Millionaire-Booklet-Grant-Cardone/dp/0990355454/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1594055623&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <div class = "col-lg-4" data-aos="flip-left">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/deep_work.jpg' %}" />
+                        <h3>Deep Work</h3>
+                        <h5>Cal Newport</h5>
+                        <a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1594055650&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-up">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/the_one_thing.jpg' %}" />
+                        <h3>The One Thing</h3>
+                        <h5>Garry Keller</h5>
+                        <a href="https://www.amazon.com/ONE-Thing-Surprisingly-Extraordinary-Results/dp/1885167776/ref=sr_1_1?dchild=1&keywords=the+one+thing&qid=1594055668&s=books&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-right">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/millionaire_success_habits.jpg' %}" />
+                        <h3>Millionaire Success Habits</h3>
+                        <h5>Dean Graziousi</h5>
+                        <a href="https://www.amazon.com/Millionaire-Success-Habits-Gateway-Prosperity/dp/1401956874/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1594055694&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <div class = "col-lg-4" data-aos="flip-left">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/rework.jpg' %}" />
+                        <h3>Rework</h3>
+                        <h5>Jason Fried</h5>
+                        <a href="https://www.amazon.com/Rework-Jason-Fried/dp/0307463745/ref=sr_1_1?dchild=1&keywords=rework&qid=1594055712&s=books&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-up">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/funny_story.jpg' %}" />
+                        <h3>It's kind of a funny story</h3>
+                        <h5>Ned Vizzini</h5>
+                        <a href="https://www.amazon.com/Its-Kind-Funny-Story-Vizzini/dp/078685197X/ref=sr_1_1?crid=2LXA845IMU12O&dchild=1&keywords=it%27s+kind+of+a+funny+story&qid=1594055733&s=books&sprefix=it%27s+kind+of%2Cstripbooks-intl-ship%2C-1&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-right">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/tree_grows_in_brooklyn.jpg' %}" />
+                        <h3>In Brooklyn grows a tree</h3>
+                        <h5>Betty Smith</h5>
+                        <a href="https://www.amazon.com/Tree-grows-Brooklyn-Betty-smith/dp/B001UGCO3Y/ref=sr_1_2?crid=2DM2M0E4L2TEB&dchild=1&keywords=a+tree+grows+in+brooklyn&qid=1594055758&s=books&sprefix=a+tree+grows+%2Cstripbooks-intl-ship%2C277&sr=1-2" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <div class = "col-lg-4" data-aos="flip-left">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/devils.jpg' %}" />
+                        <h3>The Devils Arithmetic</h3>
+                        <h5>Jane Yolen</h5>
+                        <a href="https://www.amazon.com/Devils-Arithmetic-Author-published-August/dp/B00GX3JIAG/ref=sr_1_2?crid=3GI0NEQKKXXON&dchild=1&keywords=the+devils+arithmetic+by+jane+yolen&qid=1594055814&s=books&sprefix=The+devils+arit%2Cstripbooks-intl-ship%2C285&sr=1-2" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-up">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/arctic_adventure.jpg' %}" />
+                        <h3>The Arctic Adventure</h3>
+                        <h5>Peter Freuchen</h5>
+                        <a href="https://www.amazon.com/Arctic-Adventure-Life-Frozen-North/dp/1626549990/ref=sr_1_1?dchild=1&keywords=the+arctic+adventure&qid=1594055834&s=books&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-right">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/win_friends.jpg' %}" />
+                        <h3>How to win friends and influence people</h3>
+                        <h5>Dale Carnegie</h5>
+                        <a href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0091906350/ref=sr_1_4?crid=2G2TQ1N4B6MYN&dchild=1&keywords=how+to+win+friends+%26+influence+people&qid=1594055855&s=books&sprefix=How+to+w%2Cstripbooks-intl-ship%2C292&sr=1-4" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div>&nbsp;</div>
+                <div class = "col-lg-4" data-aos="flip-left">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/20000_leagues.jpg' %}" />
+                        <h3>20000 leagues under the sea</h3>
+                        <h5>Jules Verne</h5>
+                        <a href="https://www.amazon.com/000-Leagues-Under-Wordsworth-Classics/dp/1853260312/ref=sr_1_1?crid=2KV0DFS688PGB&dchild=1&keywords=20000+leagues+under+the+sea&qid=1594055876&s=books&sprefix=20000+lea%2Cstripbooks-intl-ship%2C430&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-up">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/man_alone.jpg' %}" />
+                        <h3>Man alone with himself</h3>
+                        <h5>Friedrich Nietzsche</h5>
+                        <a href="https://www.amazon.com/Great-Ideas-Alone-Himself-Penguin/dp/0141036680/ref=sr_1_1?crid=26S5FU7C4II3H&dchild=1&keywords=man+alone+with+himself&qid=1594055892&s=books&sprefix=man+alone+with%2Cstripbooks-intl-ship%2C372&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+                <div class = "col-lg-4" data-aos="flip-right">
+                    <div class = "books-presentation">
+                        <img src="{% static 'img/on_the_heights_of_despair.jpg' %}" />
+                        <h3>On the heights of despair</h3>
+                        <h5>Emil Cioran</h5>
+                        <a href="https://www.amazon.com/Heights-Despair-M-Cioran/dp/0226106713/ref=sr_1_1?crid=3QPPN0H8LBN3W&dchild=1&keywords=in+the+heights+of+despair&qid=1594055909&s=books&sprefix=in+the+heigh%2Cstripbooks-intl-ship%2C286&sr=1-1" target = "__blank"><button type="button" class="btn btn-info">Buy it</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    {% load static %}
+    <script src="{% static 'main/javascript/aos_init.js' %}"></script>
+    <script src="{% static 'main/javascript/button-to-top.js' %}"></script>
+</html>

@@ -1,0 +1,22 @@
+@media (max-width:1000px) {
+
+    .other-project-two {
+        margin-top: 15%;
+    }
+
+    .counter-box .counter-child-one {
+        border: none;
+    }
+
+    .counter-box .counter-child-two {
+        border: none;
+    }
+
+    .content-without-background-special {
+        clip-path: polygon(0 4%, 41% 2%, 100% 0, 100% 100%, 58% 100%, 0 100%, 0% 75%);
+    }
+
+    .grettings {
+        margin-top: -80%;
+    }
+}

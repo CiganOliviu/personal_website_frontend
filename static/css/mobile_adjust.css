@@ -1,0 +1,14 @@
+@media(max-width: 800px) {
+
+  .counter-box .counter-child-one {
+    border-right: none;
+  }
+
+  .counter-box .counter-child-two {
+    border-right: none;
+  }
+
+  .books h1 {
+    margin-bottom: 10%;
+  }
+}

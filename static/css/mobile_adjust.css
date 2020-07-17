@@ -1,14 +1,17 @@
 @media(max-width: 800px) {
-
-  .counter-box .counter-child-one {
-    border-right: none;
+  .brand h1 {
+    font-size: 30px;
   }
 
-  .counter-box .counter-child-two {
-    border-right: none;
+  .brand i {
+    font-size: 22px;
   }
 
-  .books h1 {
-    margin-bottom: 10%;
+  .welcome-message .message {
+    font-size: 40px;
+  }
+
+  .welcome-message i {
+    font-size: 35px;
   }
 }

@@ -12,6 +12,13 @@ a:hover {
 	text-decoration: none;
 }
 
+.full-black-background {
+  background: #000000;
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 1%;
+}
+
 .black-background {
   background: #000000;
   color: #ffffff;
@@ -23,16 +30,19 @@ a:hover {
   padding: 5%;
   background: #ffffff;
   clip-path: polygon(0 8%, 46% 4%, 100% 0, 100% 100%, 58% 100%, 0 100%, 0% 75%);
+	overflow-x: hidden;
 }
 
 .white-background {
   padding: 4%;
   background: #ffffff;
+	overflow-x: hidden;
 }
 
 .gray-background {
   background: #f2f2f2;
   padding: 4%;
+	overflow-x: hidden;
 }
 
 #button-to-top {
@@ -279,8 +289,25 @@ a:hover {
     visibility:hidden;
 }
 
+.container .box .content i {
+	font-size: 30px;
+	color: #ffffff;
+	margin:0;
+	color:#fff;
+	transform:translateY(50px);
+	opacity:0;
+	visibility:hidden;
+	transition: all 500ms ease-out;
+}
+
+.container .box .content i:hover {
+	color: #ff6666;
+	transition: all 500ms ease-out;
+}
+
 .container .box:hover .content h2,
-.container .box:hover .content P {
+.container .box:hover .content P,
+.container .box:hover .content i {
     opacity:1;
     visibility:visible;
     transform:translateY(0px);

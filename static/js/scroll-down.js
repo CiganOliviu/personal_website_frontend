@@ -11,3 +11,11 @@ $(function() {
     return false;
   });
 });
+
+
+$(function() {
+  $('.scroll-down-blog').click (function() {
+    $('html, body').animate({scrollTop: $('#blog').offset().top }, 'slow');
+    return false;
+  });
+});

@@ -292,8 +292,6 @@ a:hover {
 .container .box .content i {
 	font-size: 30px;
 	color: #ffffff;
-	margin:0;
-	color:#fff;
 	transform:translateY(50px);
 	opacity:0;
 	visibility:hidden;

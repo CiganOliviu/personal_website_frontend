@@ -1,5 +1,5 @@
 .blog-wallpaper {
-	background-image: url(https://mocah.org/uploads/posts/580079-blogging-computer.jpg);
+	background-image: url(../img/blogs_wallpaper.jpg);
 	min-height: 100vh;
 
 	@media (min-width: 768px) {

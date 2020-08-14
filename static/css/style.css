@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-	font-size: 17px;
+	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 	background: #f2f2f2;
 }
@@ -43,6 +43,10 @@ a:hover {
   background: #f2f2f2;
   padding: 4%;
 	overflow-x: hidden;
+}
+
+.active-menu {
+	color: #ff6666;
 }
 
 #button-to-top {
@@ -122,12 +126,20 @@ a:hover {
 
 .brand {
   text-align: center;
+	font-family: 'Lobster', cursive;
+	padding: 1%;
+}
+
+.brand li {
+		list-style-type: none;
+	display: inline;
+	padding: 1%;
 }
 
 .brand a {
   color: #ffffff;
-	font-family: 'Lobster', cursive;
   transition: all 500ms ease;
+	font-size: 25px;
 }
 
 .brand i {
@@ -194,6 +206,37 @@ a:hover {
     transform: translateY(20px);
     opacity: 0;
   }
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .container .box {

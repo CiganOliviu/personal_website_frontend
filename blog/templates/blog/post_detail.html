@@ -6,7 +6,7 @@
     <div class="col-lg-12">
       <div class="brand" data-aos="fade-down">
         <a href="/"><h1>Cigan Oliviu David</h1></a>
-        <a href="https://www.linkedin.com/in/oliviu-david-c-72489015b/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>  <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> <a href="https://github.com/CiganOliviu" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://www.instagram.com/ciganoliviu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <h3 class="active-menu">{{ post.title }}</h3>
     </div>
   </div>
 </div>
@@ -18,8 +18,11 @@
       <div class="col-lg-4" data-aos="fade-right">
         <div class="card-body" align="center">
           <img src="{{ post.representation.url }}" />
+          <div>&nbsp</div>
           <h1 class="card-title">{{ post.title }}</h1>
+          <div>&nbsp</div>
           <h4 class="card-text">{{ post.author }} | {{ post.created_on}} </h4>
+          <div>&nbsp</div>
         </div>
       </div>
       <div class="col-lg-8" data-aos="fade-left">

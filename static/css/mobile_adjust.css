@@ -1,5 +1,10 @@
 @media(max-width: 800px) {
-  
+
+  .brand li {
+  	display: block;
+    padding: none;
+  }
+
   .brand h1 {
     font-size: 30px;
   }

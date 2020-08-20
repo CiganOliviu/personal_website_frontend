@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	background: #f2f2f2;
 }
@@ -36,7 +36,7 @@ a:hover {
 .white-background {
   padding: 4%;
   background: #ffffff;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .gray-background {
@@ -451,7 +451,7 @@ section {
   text-align: center;
   min-width: 320px;
   position: relative;
-    font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .tooltip {
@@ -471,11 +471,13 @@ section {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
 .tooltip:after {
   content: "" attr(tooltip) "";
   margin-left: 3px;
   color: #ff6666;
 }
+
 .tooltip:before {
   content: '';
   width: 8px;
@@ -499,6 +501,7 @@ section {
   overflow: hidden;
   color: #0ff;
 }
+
 .graph:before, .graph:after {
   content: '';
   width: 300px;
@@ -518,6 +521,7 @@ section {
   top: 100%;
   z-index: 5;
 }
+
 .graph:after {
   z-index: 3;
   border-color: rgba(0, 0, 0, 0.15);
@@ -525,10 +529,12 @@ section {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
 .graph:hover:before {
   opacity: .8;
   cursor: pointer;
 }
+
 .graph:hover + .tooltip {
   bottom: 105%;
   opacity: 1;
@@ -544,6 +550,7 @@ section {
   line-height: 280px;
   font-weight: 600;
 }
+
 .multi-graph:before {
   content: '';
   width: 300px;
@@ -558,11 +565,13 @@ section {
   left: 0;
   top: 0;
 }
+
 .multi-graph .graph {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .multi-graph .graph:after {
   background: #eee;
   border: medium none;
@@ -584,6 +593,7 @@ section {
   width: auto;
   opacity: 0;
 }
+
 .multi-graph .graph:hover:after {
   opacity: 1;
   top: 70px;
@@ -593,9 +603,9 @@ section {
   color: #ff6666;
 }
 .model-1 .graph:before {
-  -ms-transform: rotate(137deg);
-  -webkit-transform: rotate(137deg);
-  transform: rotate(137deg);
+  -ms-transform: rotate(158deg);
+  -webkit-transform: rotate(158deg);
+  transform: rotate(158deg);
   border-color: #ff6666;
 }
 
@@ -603,22 +613,22 @@ section.model-2 .graph {
   color: #ff6666;
 }
 section.model-2 .graph:before {
-  -ms-transform: rotate(150deg);
-  -webkit-transform: rotate(150deg);
-  transform: rotate(150deg);
+  -ms-transform: rotate(155deg);
+  -webkit-transform: rotate(155deg);
+  transform: rotate(155deg);
   border-color: #ff6666;
 }
 
 section.model-3 .code:before {
-  -ms-transform: rotate(80deg);
-  -webkit-transform: rotate(80deg);
-  transform: rotate(80deg);
-  border-color: #FEDA3E;
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  border-color: #feda3e;
 }
 section.model-3 .arhitecture:before {
-  -ms-transform: rotate(110deg);
-  -webkit-transform: rotate(110deg);
-  transform: rotate(110deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
   border-color: #0669AD;
 }
 
@@ -630,9 +640,9 @@ section.model-4 .graph {
   color: #ff6666;
 }
 section.model-4 .graph:before {
-  -ms-transform: rotate(110deg);
-  -webkit-transform: rotate(110deg);
-  transform: rotate(110deg);
+  -ms-transform: rotate(140deg);
+  -webkit-transform: rotate(140deg);
+  transform: rotate(140deg);
   border-color: #ff6666;
 }
 

@@ -5,6 +5,10 @@
     padding: none;
   }
 
+  .brand li a {
+    font-size: 22px;
+  }
+
   .brand h1 {
     font-size: 30px;
   }
@@ -14,7 +18,7 @@
   }
 
   .welcome-message .message {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .welcome-message i {
@@ -29,6 +33,13 @@
     border-right: none;
   }
 
+  .books {
+    margin-bottom: 30px;
+  }
+  
+  .footer h1 {
+    font-size: 30px;
+  }
   .footer ul li {
   	display: table;
   }
@@ -39,4 +50,10 @@
       width:calc(370px - 60px);
       height:calc(339px - 30px);
   }
+}
+
+@media screen and (max-width:990px) {
+		.box-project {
+				margin-bottom: 30px !important;
+		}
 }

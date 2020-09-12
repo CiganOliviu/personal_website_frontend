@@ -43,6 +43,10 @@
   	transition: all 500ms ease-out;
 }
 
+input {
+	width: 80%;
+}
+
 #blog {
 	padding: 2%;
 }

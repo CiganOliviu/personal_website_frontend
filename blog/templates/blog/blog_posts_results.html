@@ -29,10 +29,26 @@
       <div class="container">
         <div class="col-lg-12" data-aos="fade-up">
           <div class="welcome-message">
-            <h1 class="message">Strong opinions and shared thoughts on design, business, and tech.</h1>
+            <h1 class="message">Scroll down to see results with {{ request.GET.q }}.</h1>
             <a href="#" class="scroll-down-blog"> <i class="fa fa-arrow-down" aria-hidden="true"></i> </a>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="white-background" align="center" id="blog">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="form-div">
+        <h1 data-aos="fade-down">Search an Article</h1>
+        <div>&nbsp;</div>
+        <form class="form" action="{% url 'blog_search' %}" method="get">
+          <input type="text" name="q" value="{{ request.GET.q }}" placeholder="Search an Article"  data-aos="fade-down">
+          <div>&nbsp;</div>
+          <button type="submit" class="btn btn-primary" data-aos="fade-down">Search Article</button>
+        </form>
       </div>
     </div>
   </div>

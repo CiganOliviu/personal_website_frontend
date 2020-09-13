@@ -181,7 +181,7 @@ label .menu {
   transition: .5s ease-in-out;
   box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
   cursor: pointer;
-  
+
 }
 
 label .hamburger {
@@ -218,27 +218,27 @@ label input { display: none; }
 label input:checked + .menu {
   box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
   border-radius: 0;
-  
+
 }
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  
+
 }
 
 label input:checked + .menu .hamburger:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
-  
+
 }
 
 label input:checked + .menu .hamburger:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
-  
+
 }
 
 label input:checked + .menu + ul { opacity: 1; }
@@ -849,11 +849,15 @@ section.model-4 .graph:before {
   width: 60%;
   padding: 2%;
   height: auto;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
   transition: all 300ms ease-out;
 }
 
 .books img:hover {
   transform: scale(1.1);
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
   transition: all 300ms ease-out;
 }
 

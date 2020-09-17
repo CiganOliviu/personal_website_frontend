@@ -169,7 +169,7 @@ ul li {
 }
 
 label .menu {
-  position: absolute;
+  position: fixed;
   right: -100px;
   top: -100px;
   z-index: 100;
@@ -245,7 +245,7 @@ label input:checked + .menu + ul { opacity: 1; }
 
 label ul {
   z-index: 200;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

@@ -264,6 +264,14 @@ label a {
   transition: all 500ms ease;
 }
 
+.activate-click {
+	pointer-events: auto;
+}
+
+.deactivate-click {
+	pointer-events: none;
+}
+
 label a:hover {
   color: #4584b6;
   transition: all 500ms ease;

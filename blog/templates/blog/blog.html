@@ -18,9 +18,9 @@
       <input type="checkbox">
       <span class="menu"> <span class="hamburger"></span> </span>
       <ul class="deactivate-click">
-        <li> <a class="deactivate-click" href="/"><i class="fas fa-home"></i> Home</a> </li>
-        <li> <a class="deactivate-click" href="books/"><i class="fas fa-book"></i> Books Recommandation</a> </li>
-        <li> <a class="deactivate-click" href="blog/"><i class="fas fa-blog"></i> Personal Blog</a> </li>
+        <li> <a class="deactivate-click" href="{% url 'Index' %}"><i class="fas fa-home"></i> Home</a> </li>
+        <li> <a class="deactivate-click" href="{% url 'Books' %}"><i class="fas fa-book"></i> Books Recommandation</a> </li>
+        <li> <a class="deactivate-click" href="{% url 'blog_name' %}"><i class="fas fa-blog"></i> Personal Blog</a> </li>
       </ul>
   </label>
 

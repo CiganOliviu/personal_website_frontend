@@ -72,6 +72,7 @@ ul li {
   visibility: hidden;
   z-index: 1000;
 }
+
 #button-to-top::after {
   content: "\f077";
   font-family: FontAwesome;
@@ -141,7 +142,7 @@ ul li {
 }
 
 .brand li {
-		list-style-type: none;
+	list-style-type: none;
 	display: inline;
 	padding: 1%;
 }

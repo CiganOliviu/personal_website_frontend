@@ -18,8 +18,8 @@
       <input type="checkbox">
       <span class="menu"> <span class="hamburger"></span> </span>
       <ul class="deactivate-click">
-        <li> <a class="deactivate-click" href="{% url 'Index' %}"><i class="fas fa-home"></i> Home</a> </li>
-        <li> <a class="deactivate-click" href="{% url 'Books' %}"><i class="fas fa-book"></i> Books Recommandation</a> </li>
+        <li> <a class="deactivate-click" href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a> </li>
+        <li> <a class="deactivate-click" href="{% url 'books' %}"><i class="fas fa-book"></i> Books I Recommend</a> </li>
         <li> <a class="deactivate-click" href="{% url 'blog_name' %}"><i class="fas fa-blog"></i> Personal Blog</a> </li>
         <li> <a class="deactivate-click" href="{% url 'clients_management_system_index' %}"><i class="fas fa-mug-hot"></i> Get into your Client Account</a> </li>
       </ul>
@@ -240,7 +240,7 @@
 </div>
 
 <div class="no-padding-gray-background" align="center">
-  <div class="container">
+    <div class="container">
       <div class="col-md-4 col-sm-4" data-aos="fade-right">
         {% load static %}
           <a href="#">
@@ -256,6 +256,20 @@
               </div>
           </a>
       </div>
+      <div class="col-md-4 col-sm-4" data-aos="fade-left">
+        <a href="#">
+          <div class="box-project">
+             <img src="{% static 'img/projects/Longshot.png' %}">
+             <div class="box-content">
+                 <h3 class="name">Longshot</h3>
+                 <span class="post">LongShot Band Website</span>
+                 <div>&nbsp;</div>
+                 <span class="post"><i class="fab fa-html5"></i> <i class="fab fa-sass"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i> <i class="fab fa-laravel"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-font-awesome"></i></span>
+                 <span class="smaller-post">Backend powered by None.</span>
+             </div>
+         </div>
+        </a>
+       </div>
        <div class="col-md-4 col-sm-4" data-aos="fade-down">
          <a href="#">
            <div class="box-project">
@@ -264,26 +278,12 @@
                   <h3 class="name">InfiniteShoot</h3>
                   <span class="post">PhotoShoot Business Concept</span>
                   <div>&nbsp;</div>
-                  <span class="post"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i> <i class="fab fa-python"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-font-awesome"></i></span>
+                  <span class="post"><i class="fab fa-html5"></i> <i class="fab fa-js"></i> <i class="fab fa-python"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-font-awesome"></i></span>
                   <span class="smaller-post">Backend powered by None.</span>
               </div>
           </div>
          </a>
       </div>
-      <div class="col-md-4 col-sm-4" data-aos="fade-left">
-        <a href="#">
-          <div class="box-project">
-             <img src="{% static 'img/projects/no-image.jpg' %}">
-             <div class="box-content">
-                 <h3 class="name">Longshot</h3>
-                 <span class="post">LongShot Band Website</span>
-                 <div>&nbsp;</div>
-                 <span class="post"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i> <i class="fab fa-python"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-font-awesome"></i></span>
-                 <span class="smaller-post">Backend powered by None.</span>
-             </div>
-         </div>
-        </a>
-     </div>
   </div>
 </div>
 
